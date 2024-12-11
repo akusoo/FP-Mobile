@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Gambar Checklist -->
+    <ImageView
+        android:id="@+id/checklist_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="Checklist"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Pesan Berhasil -->
+    <TextView
+        android:id="@+id/success_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laporan berhasil dikirim"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tombol Kembali ke Beranda -->
+    <Button
+        android:id="@+id/back_to_home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali ke Beranda"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

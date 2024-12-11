@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Toolbar untuk judul dan tombol kembali -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Back"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Formulir Pelapor"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Formulir Input -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Input Nama -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/idnama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Masukkan nama Anda"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/blue" />
+
+            <!-- Input Nomor Telepon -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomor Telepon"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/idtelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Masukkan nomor telepon Anda"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/blue" />
+
+            <!-- Input Alamat -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/idalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Masukkan alamat Anda"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/blue" />
+
+            <!-- Input Kota -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kota"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/idkota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:hint="Masukkan kota Anda"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/blue" />
+
+            <!-- Input Tanggal Pelaporan -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal Pelaporan"
+                android:textColor="@color/black"
+                android:layout_marginTop="16dp" />
+
+            <EditText
+                android:id="@+id/tanggal_pelaporan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp"
+                android:hint="Otomatis diisi"
+                android:focusable="false"
+                android:textColorHint="@color/blue"
+                android:textColor="@color/black" />
+
+            <!-- Checkbox -->
+            <CheckBox
+                android:id="@+id/keterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Saya sudah mengisikan formulir dengan benar"
+                android:textColor="@color/black" />
+
+            <!-- Tombol Konfirmasi -->
+            <Button
+                android:id="@+id/button_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/red"
+                android:text="Laporkan"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
